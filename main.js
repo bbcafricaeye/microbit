@@ -248,10 +248,6 @@ basic.forever(function () {
         basic.pause(100)
         numLightReadings = numLightReadings + 1
         avgLightReading = avgLightReading + (input.lightLevel() - avgLightReading) / numLightReadings
-        // serial.writeValue("Timestamp", input.runningTime())
-        // serial.writeValue(" Readings", numLightReadings)
-        // serial.writeValue("Avg Light", avgLightReading)
-        // serial.writeValue("    Light", input.lightLevel())
         basic.pause(900)
         music.playTone(262, music.beat(BeatFraction.Sixteenth))
     }
